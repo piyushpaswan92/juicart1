@@ -1,0 +1,124 @@
+/* Custom styles for Juicart */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Logo Gradient */
+.logo-gradient {
+  background: linear-gradient(to right, #f97316, #10b981);
+
+  -webkit-text-fill-color: transparent;
+}
+
+/* Product Card Styling */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #fff7e6,
+    #f0fdf4
+  ); /* Subtle gradient background */
+  border: 1px solid #e5e7eb; /* Light gray border */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  aspect-ratio: 1 / 1; /* Square aspect ratio for PNGs */
+  background-color: transparent; /* No background for transparent PNGs */
+  padding: 1rem; /* Add padding around the image */
+}
+
+/* Product Info Styling */
+.product-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Button Styling */
+.btn-add-to-cart {
+  transition: background-color 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #059669 !important; /* Darker green on hover */
+}
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(to bottom, #ffffff, #f9fafb);
+}
+
+/* Section Padding and Background */
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to bottom, #f3f4f6, #ffffff);
+}
+
+/* About Section Background */
+.about-section {
+  background-image: url("https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?w=1920");
+  background-size: auto 100%;
+  background-position: top center;
+  background-attachment: fixed;
+  position: relative;
+  color: #ffffff;
+  min-height: 400px;
+}
+
+/* Overlay for About Section to improve text readability */
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Ensure content in About Section is above the overlay */
+.about-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .text-4xl {
+    font-size: 2rem;
+  }
+  .text-3xl {
+    font-size: 1.75rem;
+  }
+  .text-xl {
+    font-size: 1.125rem;
+  }
+  .about-section {
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 300px;
+  }
+  .product-card {
+    border-radius: 12px;
+  }
+}

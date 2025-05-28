@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Complete your purchase at Juicart with our secure checkout."
+    />
+    <title>Checkout - Juicart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-white">
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md py-4 z-50">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-2xl font-bold text-orange-500">Juicart</h1>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="index.html" class="text-gray-700 hover:text-orange-500"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="shop.html" class="text-gray-700 hover:text-orange-500"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="text-gray-700 hover:text-orange-500"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="text-gray-700 hover:text-orange-500"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="cart.html" class="text-gray-700 hover:text-orange-500"
+              >Cart</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Checkout Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+          Checkout
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Customer Information -->
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">
+              Customer Information
+            </h3>
+            <form id="checkout-form">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="w-full p-3 mb-4 border rounded"
+                id="full-name"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Mobile Number"
+                class="w-full p-3 mb-4 border rounded"
+                id="mobile-number"
+                required
+              />
+              <textarea
+                placeholder="Shipping Address"
+                class="w-full p-3 mb-4 border rounded"
+                rows="3"
+                id="shipping-address"
+                required
+              ></textarea>
+              <input
+                type="time"
+                placeholder="Preferred Delivery Time"
+                class="w-full p-3 mb-4 border rounded"
+                id="delivery-time"
+                required
+              />
+            </form>
+          </div>
+          <!-- Order Summary -->
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">
+              Order Summary
+            </h3>
+            <div id="order-summary" class="space-y-2"></div>
+            <p class="text-lg font-semibold mt-4">
+              Total: <span id="order-total">₹0.00</span>
+            </p>
+            <h3 class="text-xl font-semibold mt-6 mb-4">Payment (Offline)</h3>
+            <p class="text-gray-600 mb-4">
+              Payment options will be sent via WhatsApp or Email.
+            </p>
+            <button
+              class="bg-green-500 text-white px-6 py-2 rounded w-full hover:bg-green-600 transition duration-300"
+              onclick="completePurchase()"
+            >
+              Place Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-600">
+          <a href="privacy.html" class="hover:text-orange-500"
+            >Privacy Policy</a
+          >
+          |
+          <a href="terms.html" class="hover:text-orange-500"
+            >Terms and Conditions</a
+          >
+        </p>
+        <p class="text-gray-600 mt-2">© 2025 Juicart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

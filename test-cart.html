@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Cart</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h2>Shop</h2>
+    <button onclick="addToCart('Orange Juice', 100, 'orange.jpg')">
+      Add Orange Juice
+    </button>
+    <button onclick="addToCart('Apple Juice', 90, 'apple.jpg')">
+      Add Apple Juice
+    </button>
+
+    <h2>Your Cart</h2>
+    <div class="grid grid-cols-4 font-bold">
+      <div>Product</div>
+      <div>Price</div>
+      <div>Qty</div>
+      <div>Total</div>
+    </div>
+    <div id="cart-items"></div>
+    <p><strong>Grand Total:</strong> <span id="cart-total">₹0.00</span></p>
+  </body>
+</html>

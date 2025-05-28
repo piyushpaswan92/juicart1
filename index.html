@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Order fresh and pure fruit juices online at Juicart."
+    />
+    <title>Juicart - Fresh Juices Online</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-white">
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md py-4 z-50">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-2xl font-bold text-orange-500">Juicart</h1>
+        <ul class="flex space-x-6">
+          <li>
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-orange-500 font-semibold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="shop.html" class="text-gray-700 hover:text-orange-500"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="text-gray-700 hover:text-orange-500"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="text-gray-700 hover:text-orange-500"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="cart.html" class="text-gray-700 hover:text-orange-500"
+              >Cart</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">
+          Delicious Fresh Juices Online
+        </h2>
+        <p class="text-lg text-gray-600 mb-6">
+          Order 100% pure and tasty fruit juices today!
+        </p>
+        <a
+          href="shop.html"
+          class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition duration-300"
+          >Shop Fresh Juices</a
+        >
+        <p class="text-gray-600 mt-4">📞 +91 9341412466</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16" style="background-image: url('image.png')">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+          About Juicart
+        </h2>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto">
+          We envision a world where everyone has access to sustainable and
+          eco-friendly products. Founded with a passion for healthy living,
+          Juicart sources the freshest fruits to deliver pure, tasty juices.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+          Featured Products
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="orange.jpg"
+              alt="Orange Juice"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-xl font-semibold text-gray-800">Orange Juice</h4>
+              <p class="text-gray-600">₹100.00</p>
+              <button
+                class="bg-green-500 text-white px-4 py-2 mt-4 rounded-full w-full hover:bg-green-600 transition duration-300"
+                onclick="addToCart('Orange Juice', 100, 'orange.jpg')"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="apple.jpg"
+              alt="Apple Juice"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-xl font-semibold text-gray-800">Apple Juice</h4>
+              <p class="text-gray-600">₹100.00</p>
+              <button
+                class="bg-green-500 text-white px-4 py-2 mt-4 rounded-full w-full hover:bg-green-600 transition duration-300"
+                onclick="addToCart('Apple Juice', 100, 'apple.jpg')"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="mango.jpg"
+              alt="Mango Juice"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-xl font-semibold text-gray-800">Mango Juice</h4>
+              <p class="text-gray-600">₹100.00</p>
+              <button
+                class="bg-green-500 text-white px-4 py-2 mt-4 rounded-full w-full hover:bg-green-600 transition duration-300"
+                onclick="addToCart('Mango Juice', 100, 'mango.jpg')"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Contact Us</h2>
+        <p class="text-gray-600 mb-4">
+          JSBP-MRB, Patna Airport - Ashiana More Rd, near Patna Airport,
+          Sampatchak, Khagaul, Patna, Bihar 800014, India
+        </p>
+        <p class="text-gray-600 mb-4">📞 +91 9341412466</p>
+        <p class="text-gray-600">
+          Mon–Fri: 9:00 AM – 6:00 PM | Sat–Sun: Closed
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-600">
+          <a href="privacy.html" class="hover:text-orange-500"
+            >Privacy Policy</a
+          >
+          |
+          <a href="terms.html" class="hover:text-orange-500"
+            >Terms and Conditions</a
+          >
+        </p>
+        <p class="text-gray-600 mt-2">© 2025 Juicart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'946d1a50fd4c7a12',t:'MTc0ODQyODUwMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

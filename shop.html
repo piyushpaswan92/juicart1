@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shop fresh and pure fruit juices at Juicart."
+    />
+    <title>Shop Juices - Juicart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-white">
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md py-4 z-50">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-2xl font-bold text-orange-500">Juicart</h1>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="index.html" class="text-gray-700 hover:text-orange-500"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="shop.html"
+              class="text-gray-700 hover:text-orange-500 font-semibold"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="text-gray-700 hover:text-orange-500"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="text-gray-700 hover:text-orange-500"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="cart.html" class="text-gray-700 hover:text-orange-500"
+              >Cart</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Shop Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+          Available Juices
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="orange.jpg"
+              alt="Orange Juice"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-xl font-semibold text-gray-800">Orange Juice</h4>
+              <p class="text-gray-600">₹100.00</p>
+              <button
+                class="bg-green-500 text-white px-4 py-2 mt-4 rounded-full w-full hover:bg-green-600 transition duration-300"
+                onclick="addToCart('Orange Juice', 100, 'orange.jpg')"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="apple.jpg"
+              alt="Apple Juice"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-xl font-semibold text-gray-800">Apple Juice</h4>
+              <p class="text-gray-600">₹100.00</p>
+              <button
+                class="bg-green-500 text-white px-4 py-2 mt-4 rounded-full w-full hover:bg-green-600 transition duration-300"
+                onclick="addToCart('Apple Juice', 100, 'apple.jpg')"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="mango.jpg"
+              alt="Mango Juice"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-xl font-semibold text-gray-800">Mango Juice</h4>
+              <p class="text-gray-600">₹100.00</p>
+              <button
+                class="bg-green-500 text-white px-4 py-2 mt-4 rounded-full w-full hover:bg-green-600 transition duration-300"
+                onclick="addToCart('Mango Juice', 100, 'mango.jpg')"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-600">
+          <a href="privacy.html" class="hover:text-orange-500"
+            >Privacy Policy</a
+          >
+          |
+          <a href="terms.html" class="hover:text-orange-500"
+            >Terms and Conditions</a
+          >
+        </p>
+        <p class="text-gray-600 mt-2">© 2025 Juicart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
